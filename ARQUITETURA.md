@@ -3,8 +3,9 @@
 Briefing para qualquer pessoa ou IA. Escrito em 19/Nov/2026, junto com a pesquisa
 `docs/RELATORIO-motor-de-pose-TV-LG-2026-11-19.md`.
 
-> **Estado: proposta.** Não existe código do motor. A estrutura de pastas e a interface abaixo esperam o "pode" do
-> dono (regra zero). Quem for implementar começa pelo `PENDENCIAS.md`.
+> **Estado: aprovado pelo dono em 19/Nov/2026, ainda sem código.** A estrutura de pastas e a interface abaixo foram
+> aprovadas ("aprovo tudo"). Onde o texto diz "proposta", leia "aprovado, a implementar". Mudança de rumo depois dos
+> testes na TV volta a passar pelo dono. Quem for implementar começa pelo `PENDENCIAS.md` (#2).
 
 ## 1. O que é e para quem serve
 
@@ -212,7 +213,7 @@ Defeitos conhecidos nesses códigos, que o motor corrige por construção: seç�
 
 ## 10. Próximos passos
 
-1. O dono lê o relatório e diz "pode" (ou ajusta) para a estrutura e a interface deste arquivo.
+1. ~~O dono aprova a estrutura e a interface~~ feito em 19/Nov/2026.
 2. **Fase 0:** página de diagnóstico de 1 dia, na TV e no S24 (12 perguntas, seção 15 do relatório).
 3. **Fase 1:** protótipo de 1 dia: o celular lê a pose e manda os pontos, a TV desenha o esqueleto, com os dois canos.
 4. **Fase 2:** núcleo do motor 1.0, com gravações de teste.

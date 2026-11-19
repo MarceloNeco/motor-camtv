@@ -8,8 +8,8 @@ As seções citadas são do relatório `docs/RELATORIO-motor-de-pose-TV-LG-2026-
 
 | # | Pendência | Origem | Situação |
 |---|---|---|---|
-| 1 | **Decisão do dono:** aprovar (ou ajustar) a estrutura de pastas e a interface propostas no `ARQUITETURA.md` (seções 4 e 5), e os ids de interruptor sugeridos (`camera-corpo`, `camera-maos`, `modo-tv`, `ensinar-gesto`) | Pesquisa de 19/Nov/2026 | ⏸ aguardando o dono |
-| 2 | **Fase 0, diagnóstico (1 dia):** página que roda na TV LG e no Galaxy S24 e responde as 12 perguntas da seção 15: navegador exato da TV e o que ele suporta; WebRTC conecta?; `wss://` na casca; cache na casca; tempo de carga casca x empacotado; quadros por segundo do canvas na TV; Three.js do `motor-pixel` no Chromium 79; modo jogo vale para apps?; leituras por segundo no S24 (leve e completo); queda por calor em 20 minutos; câmera grande-angular acessível? | Pesquisa, seção 15 | 🟡 aberta (depende do #1 e do dono com a TV) |
+| 1 | **Decisão do dono:** aprovar (ou ajustar) a estrutura de pastas e a interface propostas no `ARQUITETURA.md` (seções 4 e 5), e os ids de interruptor sugeridos (`camera-corpo`, `camera-maos`, `modo-tv`, `ensinar-gesto`) | Pesquisa de 19/Nov/2026 | ✅ aprovada pelo dono em 19/Nov/2026 ("aprovo tudo"): estrutura, interface e ids de interruptor valem como estão no `ARQUITETURA.md` |
+| 2 | **Fase 0, diagnóstico (1 dia):** página que roda na TV LG e no Galaxy S24 e responde as 12 perguntas da seção 15: navegador exato da TV e o que ele suporta; WebRTC conecta?; `wss://` na casca; cache na casca; tempo de carga casca x empacotado; quadros por segundo do canvas na TV; Three.js do `motor-pixel` no Chromium 79; modo jogo vale para apps?; leituras por segundo no S24 (leve e completo); queda por calor em 20 minutos; câmera grande-angular acessível? | Pesquisa, seção 15 | 🟡 aberta · #1 aprovado; o dono só consegue testar a partir de segunda, 23/Nov/2026, à noite (talvez). A página pode ser escrita antes, para ele só abrir e anotar |
 | 3 | **Fase 1, protótipo mínimo (1 a 2 dias):** `exemplos/esqueleto-no-celular.html` e `exemplos/esqueleto-na-tv.html`. O celular lê a pose e manda pacotes compactos; a TV mostra QR, desenha o esqueleto com interpolação e mostra o cano em uso e o atraso. Sucesso: atraso abaixo de 200 ms por 5 minutos, nos dois canos | Pesquisa, seção 14 | 🟡 aberta (depende do #2) |
 | 4 | **Fase 2, núcleo 1.0:** `nucleo`, `camera`, `corpo`, `suave`, `medidas`, `gravador`, `motor.js`, `manifesto.json`, exemplos e testes com gravações. Copiar o MediaPipe (versão atual) para `1.0/libs/` | Pesquisa, seção 13 | 🟡 aberta |
 | 5 | **Gravações de teste:** gravar clipes de pontos (sem imagem) de agachamento, polichinelo, prancha, flexão e afundo, anotados com o número de repetições, para regular filtros e limites | Pesquisa, seção 7.7 | 🟡 aberta |
@@ -27,5 +27,6 @@ As seções citadas são do relatório `docs/RELATORIO-motor-de-pose-TV-LG-2026-
 
 ## Histórico das entregas
 
+- **19/Nov/2026:** o dono aprovou a proposta (fecha o #1) e o merge da documentação na `main`.
 - **19/Nov/2026:** pesquisa concluída e documentação inicial (README, ARQUITETURA, PENDENCIAS, CREDITOS, CLAUDE e o
   relatório em `docs/`), na branch `claude/great-ritchie-m2yprb`. Nenhum código do motor.

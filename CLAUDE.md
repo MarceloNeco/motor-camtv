@@ -3,8 +3,8 @@
 - **O que é:** o motor de câmera e TV da SolverONE. Lê o corpo e as mãos pela câmera do celular e faz o celular
   conversar com uma TV (segunda tela, celular como controle). Não pertence a nenhum app: cada app é **cliente**.
   Comece pelo `ARQUITETURA.md` e por `docs/RELATORIO-motor-de-pose-TV-LG-2026-11-19.md`.
-- **Estado em 19/Nov/2026:** só documentação e proposta. **Nenhum código do motor existe.** A estrutura de pastas e a
-  interface em `ARQUITETURA.md` são propostas esperando o "pode" do dono (regra zero).
+- **Estado em 19/Nov/2026:** só documentação. **Nenhum código do motor existe.** A estrutura de pastas e a interface
+  do `ARQUITETURA.md` foram **aprovadas pelo dono em 19/Nov/2026**. Próximo passo: `PENDENCIAS.md` #2.
 - O dono (Marcelo) não é desenvolvedor: responda em português simples, passo a passo.
 - **Regras do motor** (mesmas do `motor-pixel`): sem build; JavaScript puro; nomes de funções em português;
   **nenhum nome de app dentro de `1.0/`** (o que só um app usa fica no app); nenhuma chave ou segredo (o endereço e a
@@ -16,8 +16,6 @@
   pontos (números), sem imagem e sem pessoa identificável.
 - **Repositório público:** nunca escrever IP de casa, passphrase da TV, senha, token ou dado pessoal.
 - **Versões:** os apps apontam para `/1.0/`. Acrescentar = 1.1 (pasta nova, a anterior continua no ar); quebrar = 2.0.
-- **Primeira entrega (19/Nov/2026):** ficou na branch `claude/great-ritchie-m2yprb`, sem merge, porque o agendamento do
-  dono pediu assim. O merge é decisão dele.
 
 ---
 
